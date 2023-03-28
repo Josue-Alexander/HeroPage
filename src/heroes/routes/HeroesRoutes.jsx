@@ -1,5 +1,7 @@
 import { Navigate, Route, Routes } from "react-router-dom"
 import { Navbar } from "../../UI"
+import Footer from "../components/Footer"
+import HomePage from "../components/HomePage"
 import { DcPage, HeroPage, MarvelPage, SearchPage } from "../pages"
 
 export const HeroesRoutes = () => {
@@ -9,6 +11,7 @@ export const HeroesRoutes = () => {
         <div className="container">
 
          <Routes>
+            <Route path="home" element={<HomePage />}/>
             <Route path="marvel" element={<MarvelPage />}/>
             <Route path="dc" element={<DcPage />}/>
 
@@ -17,12 +20,12 @@ export const HeroesRoutes = () => {
 
             
 
-            <Route path="/" element={<Navigate to="/marvel" />}/>
+            <Route path="/" element={<Navigate to="/home" />}/>
 
          </Routes>
     
         </div>
-    
+        <Footer />
     </>
   )
 }
