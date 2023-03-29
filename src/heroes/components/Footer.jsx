@@ -12,7 +12,28 @@ const Footer = () => {
                     <div>
                         <img src={logo} alt='logo' className='' width={'100'} />
                     </div>
-                    <div className='d-flex flex-row mt-3 align-items-center'>
+                    <div className='d-flex flex-row align-items-center mt-3 justify-content-between'>
+                        <div className='d-flex flex-column me-5'>
+                            <h5>JAC comics</h5>
+                            <span>Catálogo</span>
+                            <span>Noticias</span>
+                            <span>Autores</span>
+                        </div>
+                        <div className='d-flex flex-column me-5'>
+                            <h5>JAC comics</h5>
+                            <span>Catálogo</span>
+                            <span>Noticias</span>
+                            <span>Autores</span>
+                        </div>
+                        <div className='d-flex flex-column'>
+                            <h5>JAC comics</h5>
+                            <span>Catálogo</span>
+                            <span>Noticias</span>
+                            <span>Autores</span>
+                        </div>
+
+                    </div>
+                    <div className='d-flex flex-row mt-3 align-items-center mb-5'>
                         <h5 className='me-3'>Nuestras Redes</h5>
                         <div style={{ width: 30 }} className='me-3'>
                             <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'>
