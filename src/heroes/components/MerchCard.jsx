@@ -1,7 +1,7 @@
 
 export const MerchCard = ({ id, name, price }) => {
     
-    const merchImageUrl = `/assets/merch/${id}.jpg`;
+    const merchImageUrl = `./assets/merch/${id}.jpg`;
 
     return (
         <div className='col animate__animated animate__fadeIn'>
